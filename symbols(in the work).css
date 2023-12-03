@@ -1,0 +1,222 @@
+dl.stats dt {
+  display: none;
+}
+ 
+/*==以下僅適用作品簡介與作品內頁==*/
+dl.stats dd.words::before,
+dl.stats dd.chapters::before,
+dl.stats dd.collections::before,
+dl.stats dd.comments::before,
+dl.stats dd.kudos::before,
+dl.stats dd.bookmarks::before,
+dl.stats dd.hits::before,
+dl.stats dd.series::before,
+dl.stats dd.published::before,
+dl.stats dd.status::before,
+dl.stats dd.subscriptions::before {
+  display: inline-block;
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-size: 15px !important;
+  margin: 0px 3px -2px 0;
+}
+ 
+dl.stats dd.words::before {
+  background: url(https://i.ibb.co/HCv1bSG/image.png);
+}
+ 
+dl.stats dd.chapters::before {
+  background: url(https://i.ibb.co/XtLW1Gr/page.png);
+}
+ 
+dl.stats dd.collections::before {
+  background: url(https://i.ibb.co/3dx21sP/image.png);
+}
+dl.stats dd.comments::before {
+  background: url(https://i.ibb.co/wNLh0GX/image.png);
+}
+ 
+dl.stats dd.kudos::before {
+  background: url(https://i.ibb.co/bWp7KC4/kudo.png);
+}
+dl.stats dd.bookmarks::before {
+  background: url(https://i.ibb.co/x8q45z7/image.png);
+}
+ 
+dl.stats dd.hits::before {
+  background: url(https://i.ibb.co/VV8myx8/image.png);
+}
+dl.stats dd.series::before {
+  background: url(https://i.ibb.co/JdmPgcB/work.png);
+}
+ 
+dl.stats dd.published::before {
+  background: url(https://i.ibb.co/5smgps0/image.png);
+}
+dl.stats dd.status::before {
+  background: url(https://i.ibb.co/NCMzpdf/image.png);
+}
+ 
+dl.stats dd.subscriptions::before {
+  background: url(https://i.ibb.co/5sxHwvm/image.png);
+}
+
+
+/*==以下適用系列(series)簡介區塊與內頁==*/
+.series.meta dl.stats dd::before,
+li[class*="series-"] dl.stats dd::before {
+	display: inline-block;
+	content: "";
+	width: 15px;
+	height: 15px;
+	background-size: 15px !important;
+	margin: 0px 3px -2px 0;
+}
+
+/*字數words*/
+.series.meta dl.stats dd:first-of-type:not([class])::before,
+li[class*="series-"] dl.stats dd:first-of-type:not([class])::before {
+	background: url(https://i.ibb.co/HCv1bSG/image.png);
+}
+
+/*作品數works*/
+.series.meta dl.stats dd:nth-of-type(2):not([class])::before,
+li[class*="series-"] dl.stats dd:nth-of-type(2):not([class])::before {
+	background: url(https://i.ibb.co/XtLW1Gr/page.png);
+}
+
+/*書籤數bookmarks*/
+.series.meta dl.stats dd:nth-of-type(4):not([class])::before,
+li[class*="series-"] dl.stats dd:nth-of-type(3):not([class])::before {
+	background: url(https://i.ibb.co/x8q45z7/image.png);
+}
+
+/*狀態(是否完成)*/
+.series.meta dl.stats dd:nth-of-type(3):not([class])::before {
+	background: url(https://i.ibb.co/NCMzpdf/image.png);
+}
+
+
+/*==以下適用標籤組(tagset)簡介區塊==*/
+.tagset dl.stats dd::before {
+	display: inline-block;
+	content: "";
+	width: 15px;
+	height: 15px;
+	background-size: 15px !important;
+	margin: 0px 3px -2px 0;
+}
+
+/*fandoms*/
+.tagset dl.stats dd:first-of-type::before {
+	background: url(https://i.ibb.co/py1xqKp/image.png);
+}
+
+/*characters*/
+.tagset dl.stats dd:nth-of-type(2)::before {
+	background: url(https://i.ibb.co/Hxkkmh1/image.png);
+}
+
+/*relationships*/
+.tagset dl.stats dd:nth-of-type(3)::before {
+	background: url(https://i.ibb.co/mtjwTnh/image.png);
+}
+
+/*additional tags*/
+.tagset dl.stats dd:last-of-type::before {
+	background: url(https://i.ibb.co/6HyYXXy/image.png);
+}
+
+
+/*==以下適用外連作品(external work)簡介區塊，含外連作品與外連書籤==*/
+li[class*="external-work"] dl.stats dd a::before {
+	display: inline-block;
+	content: "";
+	width: 15px;
+	height: 15px;
+	background-size: 15px !important;
+	margin: 0px 3px -2px 0;
+}
+
+/*書籤數*/
+li[class*="external-work"] dl.stats dd a:is([href*="/external_works"][href*="/bookmarks"])::before {
+	background: url(https://i.ibb.co/x8q45z7/image.png);
+}
+
+/*作品數*/
+li[class*="external-work"] dl.stats dd a[href*="/external_works"]::before {
+  background: url(https://i.ibb.co/JdmPgcB/work.png);
+}
+
+
+/*==以下適用收藏(collection)簡介區塊==*/
+li.collection dl.stats a[href*="/collections"]::before {
+  display: inline-block;
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-size: 15px !important;
+  margin: 0px 3px -2px 0;
+}
+ 
+li.collection dl.stats a[href*="/collections"]::before {
+  background: url(https://i.ibb.co/3dx21sP/image.png);
+}
+ 
+li.collection dl.stats a[href*="/bookmarks"]::before {
+  background: url(https://i.ibb.co/x8q45z7/image.png);
+}
+ 
+li.collection dl.stats a[href*="/works"]::before {
+  background: url(https://i.ibb.co/JdmPgcB/work.png);
+}
+ 
+li.collection dl.stats a[href*="/fandoms"]::before {
+  background: url(https://i.ibb.co/py1xqKp/image.png);
+}
+ 
+li.collection dl.stats a[href*="/requests"]::before {
+  background: url(https://i.ibb.co/KqKcLVJ/image.png);
+}
+
+
+
+/*==上述外連作品與收藏改為以:has限制範圍==*/
+li[class*="external-work"] dl.stats dd::before,
+li.collection dl.stats dd::before {
+	display: inline-block;
+	content: "";
+	width: 15px;
+	height: 15px;
+	background-size: 15px !important;
+	margin: 0px 3px -2px 0;
+}
+
+li[class*="external-work"] dl.stats dd:has(a:is([href*="/external_works"][href*="/bookmarks"]))::before {
+	background: url(https://i.ibb.co/x8q45z7/image.png);
+}
+
+li[class*="external-work"] dl.stats dd:has(a[href*="/external_works"])::before {
+  background: url(https://i.ibb.co/JdmPgcB/work.png);
+}
+
+li.collection dl.stats dd:has(a[href*="/collections"])::before {
+  background: url(https://i.ibb.co/3dx21sP/image.png);
+}
+
+li.collection dl.stats dd:has(a[href*="/bookmarks"])::before {
+  background: url(https://i.ibb.co/x8q45z7/image.png);
+}
+ 
+li.collection dl.stats dd:has(a[href*="/works"])::before {
+  background: url(https://i.ibb.co/JdmPgcB/work.png);
+}
+ 
+li.collection dl.stats dd:has(a[href*="/fandoms"])::before {
+  background: url(https://i.ibb.co/py1xqKp/image.png);
+}
+ 
+li.collection dl.stats dd:has(a[href*="/requests"])::before {
+  background: url(https://i.ibb.co/KqKcLVJ/image.png);
+}
