@@ -1,0 +1,226 @@
+/*==圖示組Imageset==*/
+p.kudos,
+a.rss span,
+.required-tags .rating-general-audience,
+.required-tags .rating-explicit,
+.required-tags .rating-mature,
+.required-tags .rating-notrated,
+.required-tags .category-none,
+.required-tags .warning-no,
+.status .count,
+.required-tags .rating-teen,
+.required-tags .category-femslash,
+.required-tags .category-gen,
+.required-tags .category-slash,
+.required-tags .category-het,
+.required-tags .category-multi,
+.required-tags .category-other,
+.required-tags .complete-no,
+.required-tags .complete-yes,
+.required-tags .warning-yes,
+.required-tags .warning-choosenotto,
+.required-tags .external-work,
+.status .private .text,
+.status .public,
+.status .hidden,
+.status .rec,
+.index .skins .icon,
+.index .mystery .icon,
+.index .tag .icon,
+.index .tagset .icon,
+.comment .icon .anonymous,
+.comment .icon .visitor,
+.abbreviated .icon .anonymous,
+.abbreviated .icon .visitor,
+.skins .primary .icon,
+.admin .primary .icon,
+.tag .primary .icon,
+.tagset .primary .icon {
+	background-image: url("https://i.ibb.co/KwhXv8y/imageset.png");
+}
+
+p.kudos {
+	background-position: -110px -580px;
+}
+
+a.rss span {
+	background-position: -150px -275px;
+}
+
+.required-tags .rating-general-audience {
+	background-position: -50px -25px;
+}
+
+.required-tags .rating-explicit {
+	background-position: -25px -25px;
+}
+
+.required-tags .rating-mature {
+	background-position: -75px -25px;
+}
+
+.required-tags .rating-notrated,
+.required-tags .category-none,
+.required-tags .warning-no,
+.status .count {
+	background-position: -150px 0px;
+}
+
+.required-tags .rating-teen {
+	background-position: 0px -25px;
+}
+
+.required-tags .category-femslash {
+	background-position: -25px 0px;
+}
+
+.required-tags .category-gen {
+	background-position: -50px 0px;
+}
+
+.required-tags .category-slash {
+	background-position: 0px 0px;
+}
+
+.required-tags .category-het {
+	background-position: -75px 0px;
+}
+
+.required-tags .category-multi {
+	background-position: -100px -0px;
+}
+
+.required-tags .category-other {
+	background-position: -125px 0px;
+}
+
+.required-tags .complete-no {
+	background-position: -100px -25px;
+}
+
+.required-tags .complete-yes {
+	background-position: -175px -25px;
+}
+
+.required-tags .warning-yes {
+	background-position: -150px -25px;
+}
+
+.required-tags .warning-choosenotto {
+	background-position: -125px -25px;
+}
+
+.required-tags .external-work {
+	background-position: -75px -50px;
+}
+
+.status .private .text {
+	background-position: -175px -50px;
+}
+
+.status .public {
+	background-position: -125px -50px;
+}
+
+.status .hidden {
+	background-position: -150px -50px;
+}
+
+.status .rec {
+	background-position: -100px -50px;
+}
+
+.index .skins .icon {
+	background-position: 0px -580px;
+}
+
+.index .mystery .icon {
+	background-position: -110px -525px;
+}
+
+.index .tag .icon,
+.index .tagset .icon {
+	background-position: -55px -580px;
+}
+
+.comment .icon .anonymous {
+	background-position: 0px -635px;
+}
+
+.comment .icon .visitor {
+	background-position: 0px -75px;
+}
+
+.abbreviated .icon .anonymous {
+	background-position: 0px -450px;
+}
+
+.abbreviated .icon .visitor {
+	background-position: 0px -375px;
+}
+
+.skins .primary .icon {
+	background-position: 0px -175px;
+}
+
+.admin .primary .icon {
+	background-position: 100px -75px;
+}
+
+.tag .primary .icon,
+.tagset .primary .icon {
+	background-position: 0px -275px;
+}
+
+/*error image*/
+#main.errors {
+  background: url("https://i.ibb.co/TBKSCXF/Sadface.png") top right no-repeat;
+}
+
+/*replace default icons*/
+.icon[src="/images/skins/iconsets/default/icon_user.png"], 
+.picture .icon[src="/images/skins/iconsets/default/icon_user.png"],
+.index .picture .icon[src="/images/skins/iconsets/default/icon_user.png"],
+.abbreviated .icon[src="/images/skins/iconsets/default/icon_user.png"],
+.index .picture .icon[src="/images/skins/iconsets/default/icon_collection.png"],
+img[src="/images/skins/iconsets/default/icon_collection.png"] {
+	background-image: url("https://i.ibb.co/KwhXv8y/imageset.png");
+	width: 0;
+	height: 0;
+}
+
+ .icon[src="/images/skins/iconsets/default/icon_user.png"] {
+	padding: 100px 0 0 100px;
+	background-position: 0px -75px;
+}
+
+.picture .icon[src="/images/skins/iconsets/default/icon_user.png"],
+.index .picture .icon[src="/images/skins/iconsets/default/icon_user.png"] {
+	padding: 55px 0 0 55px;
+	background-position: 0px -525px;
+}
+
+.abbreviated .icon[src="/images/skins/iconsets/default/icon_user.png"] {
+	padding: 75px 0 0 75px;
+	background-position: 0px -375px;
+}
+
+.index .picture .icon[src="/images/skins/iconsets/default/icon_collection.png"] {
+	padding: 55px 0 0 55px;
+	background-position: -55px -525px;
+}
+
+img[src="/images/skins/iconsets/default/icon_collection.png"] {
+	padding: 100px 0 0 100px;
+	background-position: -100px -175px;
+	border-radius: .25em;
+ }
+
+/*Replace restricted lock*/
+img[alt="(Restricted)"] {
+	width: 0;
+	height: 0;
+	margin: 3px 0;
+	padding: 15px 0 0 15px;
+	background: url("https://i.ibb.co/VH9KYJr/lockblue.png");
+}
