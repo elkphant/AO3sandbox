@@ -1,9 +1,8 @@
-/*==Symbols i used in my site skins==*/
+/*==Symbols==*/
 dl.stats dt {
 	display: none;
 }
 
-dl.stats dd.language::before,
 .work.meta dd.language::before,
 dl.stats dd.words::before,
 dl.stats dd.chapters::before,
@@ -22,8 +21,8 @@ dl.stats dd.subscriptions::before,
 .bookmark .meta.commas::before,
 .series.meta dl.stats dd::before,
 li[class*="series-"] dl.stats dd::before,
-li[class*="external-work"] dl.stats dd a::before,
-li.collection dl.stats a[href*="/collections"]::before,
+li[class*="external-work"] dl.stats dd::before,
+li.collection dl.stats dd::before,
 .tagset dl.stats dd::before {
 	display: inline-block;
 	content: "";
@@ -33,7 +32,6 @@ li.collection dl.stats a[href*="/collections"]::before,
 	margin: 0px 3px -2px 0;
 }
 
-dl.stats dd.language::before,
 .work.meta dd.language::before {
 	background: url(https://i.ibb.co/R9kL5F0/lang.png);
 }
@@ -52,7 +50,7 @@ li[class*="series-"] dl.stats dd:nth-of-type(2):not([class])::before {
 
 dl.stats dd.collections::before,
 .work.meta dd.collections::before,
-li.collection dl.stats a[href*="/collections"]::before,
+li.collection dl.stats dd:has(a[href*="/collections"])::before,
 .bookmark .meta.commas::before {
 	background: url(https://i.ibb.co/3dx21sP/image.png);
 }
@@ -68,8 +66,8 @@ dl.stats dd.kudos::before {
 dl.stats dd.bookmarks::before,
 .series.meta dl.stats dd:nth-of-type(4):not([class])::before,
 li[class*="series-"] dl.stats dd:nth-of-type(3):not([class])::before,
-li[class*="external-work"] dl.stats dd a:is([href*="/external_works"][href*="/bookmarks"])::before,
-li.collection dl.stats a[href*="/bookmarks"]::before {
+li[class*="external-work"] dl.stats dd:has(a:is([href*="/external_works"][href*="/bookmarks"]))::before,
+li.collection dl.stats dd:has(a[href*="/bookmarks"])::before {
 	background: url(https://i.ibb.co/x8q45z7/image.png);
 }
 
@@ -79,8 +77,8 @@ dl.stats dd.hits::before {
 
 dl.stats dd.series::before,
 .work.meta dd.series::before,
-li[class*="external-work"] dl.stats dd a[href*="/external_works"]::before,
-li.collection dl.stats a[href*="/works"]::before {
+li[class*="external-work"] dl.stats dd:has(a[href*="/external_works"])::before,
+li.collection dl.stats dd:has(a[href*="/works"])::before {
 	background: url(https://i.ibb.co/JdmPgcB/work.png);
 }
 
@@ -97,12 +95,12 @@ dl.stats dd.subscriptions::before {
 	background: url(https://i.ibb.co/5sxHwvm/image.png);
 }
 
-li.collection dl.stats a[href*="/fandoms"]::before,
+li.collection dl.stats dd:has(a[href*="/fandoms"])::before,
 .tagset dl.stats dd:first-of-type::before {
 	background: url(https://i.ibb.co/py1xqKp/image.png);
 }
 
-li.collection dl.stats a[href*="/requests"]::before {
+li.collection dl.stats dd:has(a[href*="/requests"])::before {
 	background: url(https://i.ibb.co/KqKcLVJ/image.png);
 }
 
